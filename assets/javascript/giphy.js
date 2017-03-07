@@ -21,7 +21,7 @@ function displayAnimalInfo() {
 
   var pet = $(this).attr("data-animal");
   //Giphy search endpoint / load still fist --- remember to change the limit to 10
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + pet + "&api_key=dc6zaTOxFJmzC&limit=10";
+  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + pet + "&api_key=dc6zaTOxFJmzC&limit=10";
   console.log(queryURL);
 
   // Creating an AJAX call for the specific movie button being clicked
