@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(135deg, rgba(85,239,203,1) 0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);
+  color: #f7f7f7;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+}
+
+
+.container {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+#animalButtons button.pet{
+	outline: none;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 65px;
+	transition: 3s;
+  	border-radius:40px;
+  	background: #fff;
+  	border: 2px solid $green;
+  	color:$green;
+  	letter-spacing:1px;
+}
+
+
+input#addAnimal{
+	margin top: 10px;
+}
+
+div.animalInputWrapper.wrapper{
+	float: right;
+	width: 25%;
+}
+
+div#gifs-appear-here {
+	position: relative;
+}
+
+img.gif {
+	width: 250px;
+	position: relative;
+	overflow: auto; 
+}
+
