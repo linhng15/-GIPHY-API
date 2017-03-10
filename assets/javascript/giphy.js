@@ -87,36 +87,37 @@ function renderButton() {
 }
 
 // ============== CODE FOR THE USER ANIMAL INPUT INTO THE ARRAY WITH THE LIST=========================
-$('#addAnimal').on("click", function(event) {
-  event.preventDefault();
-  //grab the input from the textbox
-  var pet = $('#animal-input').val().trim();
-  //stop creating empty button
-  if (!(pet == '')) {
-    } else {
-  alert("Please Fill In The Animal You Want To See.");
-  pet.stop()
-  }
-  // animal from the textbox added to the array
-  listOfAnimalName.push(pet);
-  //calling renderButtons to handlles the array of animals
+$(document).on('ready', function () {
+  $('#addAnimal').on("click", function(event) {
+    event.preventDefault();
+    //grab the input from the textbox
+    var pet = $('#animal-input').val().trim();
+    //stop creating empty button
+    if (!(pet == '')) {
+      } else {
+    alert("Please Fill In The Animal You Want To See.");
+    pet.stop()
+    }
+    // animal from the textbox added to the array
+    listOfAnimalName.push(pet);
+    //calling renderButtons to handlles the array of animals
+    renderButton();
+  });
+
+  // ==============INTIALIZE=========================
+  $(document).on('click', '.pet', displayAnimalInfo);
+  // Calling the renderButtons function to display the intial buttons
   renderButton();
+
+  $(document).on('click', '.gif', function() {
+    var state = $(this).attr("data-state");
+
+    if (state === "still") {
+      $(this).attr("src", $(this).attr("data-animate"));
+      $(this).attr("data-state", "animate");
+    } else {
+      $(this).attr("src", $(this).attr("data-still"));
+      $(this).attr("data-state", "still");
+    };
+  });
 });
-
-// ==============INTIALIZE=========================
-$(document).on('click', '.pet', displayAnimalInfo);
-// Calling the renderButtons function to display the intial buttons
-renderButton();
-
-$(document).on('click', '.gif', function() {
-  var state = $(this).attr("data-state");
-
-  if (state === "still") {
-    $(this).attr("src", $(this).attr("data-animate"));
-    $(this).attr("data-state", "animate");
-  } else {
-    $(this).attr("src", $(this).attr("data-still"));
-    $(this).attr("data-state", "still");
-  };
-});
-
