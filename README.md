@@ -1,9 +1,9 @@
 # -GIPHY-API
 
-This application use the GIPHY API to make a dynamic web page. 
-The theme for this app is animals. 
+<p>This application use the GIPHY API to make a dynamic web page.</p> 
+<p>The theme for this app is animals. </p>
 ======================================
-It call the GIPHY API and use JavaScript and jQuery to change
+<p>It call the GIPHY API and use JavaScript and jQuery to change</p>
 ======================================
 <p>User have a few options:</p>
 <ul>
