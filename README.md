@@ -3,7 +3,7 @@
 <p>This application use the GIPHY API to make a dynamic web page.</p> 
 <p>The theme for this app is animals. </p>
 ======================================
-<p>It call the GIPHY API and use JavaScript and jQuery to change</p>
+<p>It call the GIPHY API and use JavaScript and jQuery to change the website HTML.</p>
 ======================================
 <p>User have a few options:</p>
 <ul>
